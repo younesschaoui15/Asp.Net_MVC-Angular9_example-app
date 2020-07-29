@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <ng-container *ngFor="let user of _users">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="">
+          <div class="caption">
+            <h3>{{user.name}}</h3>
+            <div>
+              <div><span class="cl-1">Email:</span> {{user.email}}</div>
+              <div><span class="cl-1">Phone:</span> {{user.phone}}</div>
+              <div><span class="cl-1">Company:</span> {{user.company.name}}</div>
+            </div>
+            <p style="margin-top: 30px">
+              <a [href]="'mailto:' + user.email" target="_blank" class="btn btn-success" role="button">Send mail</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+    //ViewBag.Title = "Angular";
+}
+@*@section Scripts {
+    @Scripts.Render("~/bundles/bootstrap")
+}*@
+
+@*@Html.Raw(File.ReadAllText(Server.MapPath("~/Scripts/libs/index.html")))*@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Angular App</title>
+    <base href="/Home/Angular/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    @Styles.Render("~/Content/ngApp-styles")
+</head>
+
+<body>
+    <app-root></app-root>
+
+    @Scripts.Render("~/bundles/ngApp-runtime")
+    @Scripts.Render("~/bundles/ngApp-polyfills")
+    @Scripts.Render("~/bundles/ngApp-scripts")
+    @Scripts.Render("~/bundles/ngApp-main")
+
+    @*<script src="~/Scripts/ngWebApp/runtime-es2015.js" type="module"></script>
+        <script src="~/Scripts/ngWebApp/runtime-es5.js" nomodule defer></script>
+        <script src="~/Scripts/ngWebApp/polyfills-es5.js" nomodule defer></script>
+        <script src="~/Scripts/ngWebApp/polyfills-es2015.js" type="module"></script>
+        <script src="~/Scripts/ngWebApp/styles-es2015.js" type="module"></script>
+        <script src="~/Scripts/ngWebApp/styles-es5.js" nomodule defer></script>
+        <script src="~/Scripts/ngWebApp/vendor-es2015.js" type="module"></script>
+        <script src="~/Scripts/ngWebApp/vendor-es5.js" nomodule defer></script>
+        <script src="~/Scripts/ngWebApp/main-es2015.js" type="module"></script>
+        <script src="~/Scripts/ngWebApp/main-es5.js" nomodule defer></script>*@
+</body>
+</html>
+
